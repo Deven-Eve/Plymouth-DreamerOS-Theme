@@ -1,0 +1,10 @@
+// Center the background image
+
+background = Image("background.png);
+screen_width = Window.GetWidth();
+screen_height = Window.GetHeight();
+image_width = background.GetWidth();
+image_height = background.GetHeight();
+x_offset = (screen_width - image_width) / 2;
+y_offset = (screen_height - image_height) / 2;
+DrawImage(background, x_offset, y_offset, image_width, image_height);
